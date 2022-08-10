@@ -4,8 +4,12 @@
   --navPrimary: rgba(85, 85, 255, 0.6);
   --navSecondary:rgba(255, 0, 0, 0.6);
   --navHover:rgba(255, 58, 58, 0.7);
+  --txtH1: rgb(127, 127, 42);
+  --txtH2:grey;
+  --txtH3:grey;
+  /* --txtP:;
   --btnMain:;
-  --btnHover:;
+  --btnHover:; */
 }
 *{
   margin: 0;
@@ -13,6 +17,8 @@
 }
 body{
   background: url(assets/12643221_5040007.jpg);
+  background-color: rgba(200,100,0,.5); /* Tint color */
+  background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -57,6 +63,7 @@ html::-webkit-scrollbar {
   margin: 2px;
   padding: 0 5px;
   padding-left: 10px;
+  transition: transform 0.5s;
 }
 .nav_item a{
   text-decoration: none;
@@ -65,6 +72,7 @@ html::-webkit-scrollbar {
 .nav_item:hover{
   background-color: var(--navHover);
   border-radius: 5px;
+  transform: scale(1.05);
 }
 .nav_selected{
   border-bottom: 2px solid purple;
@@ -82,6 +90,20 @@ html::-webkit-scrollbar {
   align-items: center;
   height: 400px;
   margin: 5rem;
+  transition: transform 1s;
+}
+.home_center_image:hover{
+  transform: scale(1.05);
+}
+h1{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color:var(--txtH1);
+}
+h2{
+  color: var(--txtH2);
+}
+h3{
+  color: var(--txtH3);
 }
 .contents{
   align-items: center;
