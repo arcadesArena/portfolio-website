@@ -23,23 +23,18 @@ html::-webkit-scrollbar {
   display: none;  /* Safari and Chrome */
 }
 body{
-  background: url(assets/12643221_5040007.jpg);
-  background-color: rgba(200,100,0,.5); /* Tint color */
+  background: url(backgrounds/black-desk-background-01.webp);
+  /* Tint color */
+  background-color: rgba(28, 27, 26, 0.5); 
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
-.nav_div{
-  opacity: .3;
-}
-.nav_div:hover{
-  opacity: 1;
-}
 .card_div{
   margin: 5px 10vw 5px 10vw;
   padding: 5px;
-  background-color: rgba(39, 47, 158, 0.3);
+  /* background-color: rgba(39, 47, 158, 0.3); */
   border-radius: 5px;
   width: auto;
   border: 2px solid purple;
